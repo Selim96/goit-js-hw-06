@@ -6,3 +6,8 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+function ingrToItem(ingr, ul) {
+  const item = document.createElement('li');
+  heading.textContent = ingr[0];
+}
