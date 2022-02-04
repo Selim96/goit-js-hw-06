@@ -7,7 +7,16 @@ const ingredients = [
   'Condiments',
 ];
 
+const list = document.querySelector('#ingredients');
+
 function ingrToItem(ingr, ul) {
-  const item = document.createElement('li');
-  heading.textContent = ingr[0];
+  ingr.forEach((elem) => {
+    const item = document.createElement('li');
+    item.textContent = elem;
+    item.classList.add('item');
+    ul.append(item);
+  });
+  
 }
+
+ingrToItem(ingredients, list);
